@@ -1,0 +1,70 @@
+@import '../../styles/variables.scss';
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin responsive {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+.whyChooseUs {
+  text-align: center;
+  padding: 2rem;
+  background-color: $secondary-color;
+  
+  h2 {
+    font-size: 48px ;
+    color: $primary-color;
+  }
+  
+  p {
+    margin: 23px;
+    color: $quinary-color;
+    font-size:  20px;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    
+    .card {
+      background-color: $secondary-color;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      width: 350px;
+      text-align: left;
+      
+      img {
+        max-width: 100%;
+        border-radius: 8px;
+      }
+      
+      h3 {
+        font-size: 1.25rem;
+        color: $primary-color;
+        margin: 0.5rem 0;
+      }
+      
+      p {
+        font-size: 1rem;
+        color: $quinary-color;
+        margin: 0.5rem 0 1rem;
+      }
+      
+      a {
+        text-decoration: none;
+        color: $tertiary-color;
+        font-weight: bold;
+        border-bottom: 1px solid $tertiary-color;
+      }
+    }
+  }
+}

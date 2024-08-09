@@ -1,0 +1,13 @@
+@import "../../../styles/variables.scss";
+
+.title {
+  color: $primary-color;
+  font-size: 48px;
+  text-align: center;
+
+}
+.subtitle {
+  color: $quinary-color;
+  margin-bottom: 20px;
+  font-size: 20px;
+}

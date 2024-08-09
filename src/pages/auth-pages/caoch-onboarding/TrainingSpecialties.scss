@@ -1,0 +1,44 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.training-specialties {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+
+  h1 {
+    font-size: 2.5rem;
+    color: $primary-color;
+    margin-bottom: 3rem;
+  }
+
+  .input-field {
+    width: 100%;
+    max-width: 600px;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+
+  .continue-button {
+    width: 225px;
+    margin-top: 30px;
+
+    padding: 0.75rem;
+    background-color: $primary-color;
+    color: $secondary-color;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+    margin-inline: auto;
+  }
+
+  .continue-button:hover {
+    background-color: #0055cc;
+  }
+}

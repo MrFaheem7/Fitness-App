@@ -1,0 +1,14 @@
+@import "../../../styles/variables.scss";
+
+.stars {
+  float: left;
+  font-size: 2rem;
+
+  .star {
+    color: $quinary-color;
+
+    &.filled {
+      color: $primary-color;
+    }
+  }
+}

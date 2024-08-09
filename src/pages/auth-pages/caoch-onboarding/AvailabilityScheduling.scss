@@ -1,0 +1,51 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+
+.availability-scheduling {
+
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+
+  h1 {
+    font-size: 2.5rem;
+    color: $primary-color;
+    margin-bottom: 3rem;
+  }
+
+  .input-field {
+    width: 100%;
+    max-width: 738px;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+
+  .error{
+    color: $error-color;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  .continue-button {
+    width: 100%;
+    max-width: 600px;
+    width: 225px;
+    padding: 0.75rem;
+    background-color: $primary-color;
+    color: $secondary-color;
+    border: none;
+    margin-top: 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .continue-button:hover {
+    background-color: #0055cc;
+  }
+}

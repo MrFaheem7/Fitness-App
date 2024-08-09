@@ -1,0 +1,104 @@
+@import '../../styles/variables.scss';
+
+.find-trainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: $secondary-color;
+  border-radius: 10px;
+  margin-bottom: 40px;
+
+  .text-section {
+    flex: 1;
+    padding-right: 20px;
+
+    h2 {
+      color: $primary-color;
+      margin-bottom: 20px;
+      font-size: 48px;
+      line-height:  55.2px;
+    }
+
+    p {
+      color: $quinary-color;
+      margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .find-trainer-button {
+      background-color: $primary-color;
+      color: $secondary-color;
+      border: none;
+      width: 225px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: $accent-color;
+      }
+    }
+  }
+
+  .map-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .map {
+      position: relative;
+
+      img {
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      .trainer-location {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: $accent-color;
+        border-radius: 50%;
+        border: 2px solid $secondary-color;
+
+        &.trainer1 {
+          top: 20%;
+          left: 30%;
+        }
+
+        &.trainer2 {
+          top: 50%;
+          left: 50%;
+        }
+
+        &.trainer3 {
+          top: 70%;
+          left: 20%;
+        }
+
+        &.trainer4 {
+          top: 40%;
+          left: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .find-trainer {
+    flex-direction: column-reverse;
+
+    .text-section {
+      padding-right: 0;
+      text-align: center;
+    }
+
+    .map-section {
+      margin-top: 20px;
+    }
+  }
+}

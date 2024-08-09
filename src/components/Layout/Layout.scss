@@ -1,0 +1,42 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+  header {
+    flex-shrink: 0;
+  }
+  
+  footer {
+    flex-shrink: 0;
+  }
+  
+  .main-content {
+    flex: 1;
+    overflow-y: auto;
+
+    .outlet-main-container {
+      margin-top: 8px;
+      margin-bottom: 10px;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar-track {
+        display: none;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        display: none;
+      }
+    }
+  }
+
+  // .button-active {
+  //   background: $background;
+  //   color: white;
+  //   border: 1px solid $tertiaryColor;
+  //   font-weight: 700;
+  // }
+}

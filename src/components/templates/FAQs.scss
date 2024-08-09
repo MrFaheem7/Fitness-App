@@ -1,0 +1,45 @@
+@import "../../styles/variables.scss";
+
+.faqs {
+  padding: 20px;
+  color: $tertiary-color;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .faq-collapse {
+    .ant-collapse-item {
+      border-bottom: 1px solid $primary-color;
+    }
+
+    .ant-collapse-header {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      color: $primary-color;
+
+      .header-content {
+        display: flex;
+        align-items: center;
+        .quote-icon {
+          margin-right: 10px;
+          margin-bottom: 10px;
+        }
+        .header-text-content {
+          font-size: 1rem;
+        }
+      }
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+    .ant-collapse-content-box {
+      .subtext {
+        margin: 0;
+        color: $quinary-color;
+      }
+    }
+  }
+}

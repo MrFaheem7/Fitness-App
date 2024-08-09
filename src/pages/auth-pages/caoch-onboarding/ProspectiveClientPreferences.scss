@@ -1,0 +1,40 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.prospective-client-preferences {
+  padding: 2rem;
+  text-align: center;
+
+  h2 {
+    color: $primary-color;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .preferences-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .form-group {
+      width: 100%;
+      max-width: 600px;
+      margin-bottom: 1rem;
+      text-align: left;
+    }
+
+    button {
+      background-color: $primary-color;
+      color: $secondary-color;
+      padding: 0.75rem 2rem;
+      width: 225px;
+      margin-top: 30px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import "../../../styles/variables.scss";
+
+.badge {
+  background-color: #08256729;
+  color: $quinary-color;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}

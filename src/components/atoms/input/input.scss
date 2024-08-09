@@ -1,0 +1,43 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+input[type="text"],
+input[type="file"] {
+  width: 100%;
+  max-width: 738px;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+}
+
+input[type="file"] {
+  padding: 0.375rem;
+  width: 146px;
+  height: 139px;
+
+  &::-webkit-file-upload-button {
+    display: none;
+    content: none;
+  }
+
+  &::before {
+    content: none;
+  }
+}
+
+.checkboxContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #565656;
+
+  input[type="checkbox"] {
+    margin-right: 0.5rem;
+    height: 20px;
+    width: 20px;
+  }
+}

@@ -1,0 +1,93 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.hero {
+  @include flex-center;
+  flex-direction: row;
+  text-align: left;
+  padding: 2rem;
+  gap: 2rem;
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
+
+  .textContent {
+    max-width: 800px;
+    width: 40%;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: $primary-color;
+      @media screen and (max-width: 768px) {
+        font-size: 2.2rem;
+      }
+    }
+
+    p {
+      margin: 1rem 0;
+      color: $quinary-color;
+      font-size: 20px;
+    }
+
+    .searchBar {
+      @include flex-center;
+     
+      margin: 1.5rem 0;
+
+      input {
+        padding: 0.5rem;
+        outline: none;
+      
+       border-radius: 0 0 0 0;
+        border: 1px solid #ddd;
+        width: 100%;
+      }
+
+      button {
+        padding: 0.5rem 1rem;
+        border: none;
+        background-color: $accent-color;
+        color: $secondary-color;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      @include responsive {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+
+      span {
+        background-color: #08256729;
+        color: $quinary-color;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .imageContent {
+    margin-top: 2rem;
+
+
+    img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    @include responsive {
+      width: 100%;
+    }
+  }
+}

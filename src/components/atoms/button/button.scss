@@ -1,0 +1,21 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.custom-button {
+  width: 100%;
+  max-width: 600px;
+  width: 225px;
+  padding: 0.75rem;
+  background-color: $primary-color;
+  color: $secondary-color;
+  border: none;
+  margin-top: 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}

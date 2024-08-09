@@ -8,6 +8,13 @@ import step3 from "../assets/icons/steps/step3.svg";
 import step4 from "../assets/icons/steps/step4.svg";
 import trainer1 from "../assets/images/trainer-1.jpeg";
 import trainer2 from "../assets/images/trainer-2.jpeg";
+import client1 from "../assets/images/client1.png";
+import client2 from "../assets/images/client2.png";
+import client3 from "../assets/images/client3.png";
+import google from "../assets/icons/google.svg";
+import email from "../assets/icons/email.png";
+import apple from "../assets/icons/apple.png";
+import fb from "../assets/icons/fb.png";
 
 export const tags = [
   "Body composition",
@@ -232,21 +239,21 @@ export const fitnessGoalsQuestions = [
 export const reviews = [
   {
     name: "S. Watkins",
-    image: "/src/assets/images/client1.png",
+    image: client1,
     review:
       "I've seen significant improvements in my fitness levels since using Fit Connect. The tailored workout plans are perfect. I've seen significant improvements in my fitness levels since using Fit Connect. The tailored workout plans are perfect.....",
     rating: 4,
   },
   {
     name: "S. Watkins",
-    image: "/src/assets/images/client2.png",
+    image: client2,
     review:
       "I've seen significant improvements in my fitness levels since using Fit Connect. The tailored workout plans are perfect. I've seen significant improvements in my fitness levels since using Fit Connect. The tailored workout plans are perfect.....",
     rating: 4,
   },
   {
     name: "S. Watkins",
-    image: "/src/assets/images/client3.png",
+    image: client3,
     review:
       "I've seen significant improvements in my fitness levels since using Fit Connect. The tailored workout plans are perfect. I've seen significant improvements in my fitness levels since using Fit Connect. The tailored workout plans are perfect.....",
     rating: 4,
@@ -456,23 +463,23 @@ export function buttonsHandler(type) {
   const navigate = useNavigate();
   return [
     {
-      icon: "/src/assets/icons/google.svg",
+      icon: google,
       text: "Continue with Google",
       onClick: () => {},
     },
     {
-      icon: "/src/assets/icons/email.png",
+      icon: email,
       text: "Continue with Gmail",
       onClick: () =>
         type === "preLogin" ? navigate("/client-login") : navigate("/client-signup"),
     },
     {
-      icon: "/src/assets/icons/apple.png",
+      icon: apple,
       text: "Continue with Apple",
       onClick: () => {},
     },
     {
-      icon: "/src/assets/icons/fb.png",
+      icon: fb,
       text: "Continue with Facebook",
       onClick: () => {},
     },
@@ -482,23 +489,23 @@ export function coachButtonsHandler(type) {
   const navigate = useNavigate();
   return [
     {
-      icon: "/src/assets/icons/google.svg",
+      icon: google,
       text: "Continue with Google",
       onClick: () => {},
     },
     {
-      icon: "/src/assets/icons/email.png",
+      icon: email,
       text: "Continue with Gmail",
       onClick: () =>
         type === "preLogin" ? navigate("/login") : navigate("/signup"),
     },
     {
-      icon: "/src/assets/icons/apple.png",
+      icon: apple,
       text: "Continue with Apple",
       onClick: () => {},
     },
     {
-      icon: "/src/assets/icons/fb.png",
+      icon: fb,
       text: "Continue with Facebook",
       onClick: () => {},
     },

@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Hero.module.scss";
 import { tags } from "../../constants";
 import Badge from "../atoms/badge/badge";
+import herobg from "../../assets/hero-images/Hero-bg.png";
 
 const Hero = () => {
   return (
@@ -24,7 +25,7 @@ const Hero = () => {
         </div>
       </div>
       <div className={styles.imageContent}>
-        <img src="/src/assets/hero-images/Hero-bg.png" alt="Fitness Training" />
+        <img src={herobg} alt="Fitness Training" />
       </div>
     </section>
   );

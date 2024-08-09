@@ -37,7 +37,7 @@ const Navbar = () => {
       <ul className={styles.navLinks}>
         {navLinks.map((link, index) => (
           <li key={index}>
-            <a to={link.href}>{link.name}</a>
+            <a href={link.href}>{link.name}</a>
           </li>
         ))}
       </ul>

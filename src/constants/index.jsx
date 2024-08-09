@@ -1,4 +1,13 @@
 import { useNavigate } from "react-router-dom";
+import choose1 from "../assets/icons/choose/choose1.svg";
+import choose2 from "../assets/icons/choose/choose2.svg";
+import choose3 from "../assets/icons/choose/choose3.svg";
+import step1 from "../assets/icons/steps/step1.svg";
+import step2 from "../assets/icons/steps/step2.svg";
+import step3 from "../assets/icons/steps/step3.svg";
+import step4 from "../assets/icons/steps/step4.svg";
+import trainer1 from "../assets/images/trainer-1.jpeg";
+import trainer2 from "../assets/images/trainer-2.jpeg";
 
 export const tags = [
   "Body composition",
@@ -16,19 +25,19 @@ export const cardData = [
     title: "Muscles Building",
     description:
       "Muscle building involves progressive resistance training, proper nutrition, and sufficient rest to increase muscle size and strength.",
-    image: "/src/assets/icons/choose/choose1.svg",
+    image: choose1,
   },
   {
     title: "High Quality",
     description:
       "Muscle building is the process of increasing muscle size and strength through progressive resistance training, optimal nutrition, and adequate recovery.",
-    image: "/src/assets/icons/choose/choose2.svg",
+    image: choose2,
   },
   {
     title: "Guaranteed Result",
     description:
       "Muscle building guarantees increased size and strength through consistent progressive resistance training, optimal nutrition, and proper recovery.",
-    image: "/src/assets/icons/choose/choose3.svg",
+    image: choose3,
   },
 ];
 
@@ -37,25 +46,25 @@ export const stepsData = [
     title: "Add Your Details",
     description:
       "We’ll ask you a few questions to better understand your situation and pair you with the perfect trainer.",
-    image: "/src/assets/icons/steps/step1.svg",
+    image: step1,
   },
   {
     title: "Schedule Video call",
     description:
       "Video chat your trainer to get to know each other and further discuss your goals, limitations, and experience.",
-    image: "/src/assets/icons/steps/step2.svg",
+    image: step2,
   },
   {
     title: "Get a weekly plan",
     description:
       "Your trainer will handcraft a step-by-step Guidance workout plan perfect for you.",
-    image: "/src/assets/icons/steps/step3.svg",
+    image: step3,
   },
   {
     title: "Adjust and improve",
     description:
       "As you complete workouts your trainer will progress and adapt your plan to push you forwards.",
-    image: "/src/assets/icons/steps/step4.svg",
+    image: step4,
   },
 ];
 
@@ -65,21 +74,21 @@ export const experts = [
     title: "Fitness Coach",
     speciality: "Weight Loss",
     rating: 4,
-    image: "/src/assets/images/trainer-1.jpeg",
+    image: trainer1
   },
   {
     name: "Fitness Tailored",
     title: "Cardio, Body Building, Hot Yoga",
     speciality: "No. of trainers: 08",
     rating: 5,
-    image: "/src/assets/images/Gym.jpg",
+    image: trainer2
   },
   {
     name: "Iron Giants",
     title: "Instructor",
     speciality: "Body Building",
     rating: 5,
-    image: "/src/assets/images/trainer-2.jpeg",
+    image: trainer2
   },
 ];
 

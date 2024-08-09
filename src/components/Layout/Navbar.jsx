@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Dropdown, Menu, Button } from "antd";
 import styles from "./Navbar.module.scss";
-
+import navlogo from "../../assets/logo.svg";
 const Navbar = () => {
   const navigate = useNavigate();
 
@@ -32,7 +32,7 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <img src="/src/assets/logo.svg" alt="logo" onClick={handleLogo} />
+        <img src={navlogo} alt="logo" onClick={handleLogo} />
       </div>
       <ul className={styles.navLinks}>
         {navLinks.map((link, index) => (

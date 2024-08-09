@@ -3,6 +3,7 @@ import { Collapse } from "antd";
 import "./FAQs.scss";
 import { items } from "../../constants";
 import SectionHeader from "../atoms/section-header/section-header";
+import doubleQuote from "../../assets/icons/tools-icons/double-qoute.svg";
 const { Panel } = Collapse;
 
 const FAQs = () => {
@@ -15,7 +16,7 @@ const FAQs = () => {
             className="faq-panel"
             header={
               <div className="header-content">
-                <img src="/src/assets/icons/tools-icons/double-qoute.svg" alt="" className="quote-icon" />
+                <img src={doubleQuote} alt="" className="quote-icon" />
                 <span className="header-text-content">{item.title}</span>
               </div>
             }

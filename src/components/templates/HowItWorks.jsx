@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./HowItWorks.module.scss";
 import { stepsData } from "../../constants";
+import seperator from "../../assets/icons/step-sperator.svg";
 
 const HowItWorks = () => {
   return (
@@ -14,7 +15,7 @@ const HowItWorks = () => {
                 <img src={step.image} alt={step.title} />
                 {index < stepsData.length - 1 && (
                   <img
-                    src="/src/assets/icons/step-sperator.svg"
+                    src={seperator}
                     alt="step-seperator"
                     className={styles.dotedLine}
                   />

@@ -11,7 +11,7 @@ function FindTrainer() {
       </div>
       <div className="map-section">
         <div className="map">
-          <img src={loc} alt="Map" />
+          <img src={location} alt="Map" />
         </div>
       </div>
     </section>

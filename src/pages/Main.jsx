@@ -52,7 +52,7 @@ const Signup = lazy(() => import("./auth-pages/SignUp"));
 const Main = ({ navigation }) => {
   return (
     <ErrorBoundary FallbackComponent={ErrorFallback}>
-      <Layout navigation={navigation} isAuthFlow={true}>
+      <Layout navigation={navigation} isAuthFlow={false}>
         <Suspense
           fallback={
             <Spin

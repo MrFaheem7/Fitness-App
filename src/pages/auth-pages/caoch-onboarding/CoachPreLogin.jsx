@@ -1,22 +1,27 @@
 import React, { useState } from "react";
 import styles from "./PreAuth.module.scss";
 import { coachButtonsHandler } from "../../../constants";
+import { useNavigate } from "react-router-dom";
 
 const CoachPreLogin = () => {
   const [email, setEmail] = useState("");
-const socialButtons =coachButtonsHandler("preLogin");
+  const navigate = useNavigate();
+  const socialButtons = coachButtonsHandler("preLogin");
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Email: ", email);
   };
- 
 
   return (
     <div className={styles.signInContainer}>
       <h2>Sign in to your account</h2>
       <form onSubmit={handleSubmit}>
         {socialButtons.slice(0, 2).map((button, index) => (
-          <button key={index} className={styles.socialButton} onClick={button.onClick}>
+          <button
+            key={index}
+            className={styles.socialButton}
+            onClick={button.onClick}
+          >
             <img src={button.icon} alt={button.text} />
             {button.text}
           </button>
@@ -28,7 +33,11 @@ const socialButtons =coachButtonsHandler("preLogin");
         </div>
         <div className={styles.socialButtonWrapper}>
           {socialButtons.slice(2).map((button, index) => (
-            <button key={index} className={styles.socialButton} onClick={button.onClick}>
+            <button
+              key={index}
+              className={styles.socialButton}
+              onClick={button.onClick}
+            >
               <img src={button.icon} alt={button.text} />
               {button.text}
             </button>
@@ -45,7 +54,7 @@ const socialButtons =coachButtonsHandler("preLogin");
           Continue
         </button>
         <p className={styles.signUpText}>
-          Don't have an account? <a href="/signup">Sign Up</a>
+          Don't have an account? <a onClick={() => navigate("/signup")}>Sign Up</a>
         </p>
       </form>
     </div>

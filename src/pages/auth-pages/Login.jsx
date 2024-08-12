@@ -83,7 +83,7 @@ const Login = () => {
           {isLoading ? <Spin spinning={true} size="small" /> : "Login"}
         </PrimaryButton>
         <p className="signUpText">
-          Don't have an account? <a href="/signup">Sign Up</a>
+          Don't have an account? <a onClick={()=>navigate("/signup")}>Sign Up</a>
         </p>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import "./GetStarted.scss";
-import person from "../../assets/revenue.png";
+import location from '../../assets/loc.png';
 function GetStarted() {
   return (
     <section className="get-started">
@@ -14,7 +14,7 @@ function GetStarted() {
       </div>
       <div className="right-section">
         <div className="person">
-          <img src={person} alt="Person" />
+          <img src={location} alt="Map" />
         </div>
       </div>
     </section>

@@ -1,0 +1,76 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/variables.scss";
+
+.pricingPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  .topSection {
+    background-image: url("../../../assets/pricing-bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+    padding: 3rem 1rem;
+    color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      max-width: 800px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      max-width: 900px;
+    }
+
+    .seePlansButton {
+      padding: 0.75rem 2rem;
+      background-color: $primary-color;
+      color: $secondary-color;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    
+
+      &:hover {
+        background-color: #004080;
+      }
+    }
+  }
+}
+
+.bottomSection {
+  padding: 3rem 1rem;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: $primary-color;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: $quinary-color;
+  }
+
+  .plansContainer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 60px;
+  }
+}

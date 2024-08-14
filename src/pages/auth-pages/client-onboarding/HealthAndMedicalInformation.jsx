@@ -4,6 +4,7 @@ import CustomSelect from "../../../components/UI/CustomSelect";
 import { useNavigate } from "react-router-dom";
 import { healthAndMedicalFormInfoFormFields } from "../../../constants";
 import { healthAndMedicalSchema } from "../../../lib/validations";
+import back from "../../../assets/icons/back.png";
 const HealthAndMedicalInformation = () => {
   const [formData, setFormData] = useState({
     isMedicalCondition: "",
@@ -45,7 +46,7 @@ const HealthAndMedicalInformation = () => {
       <div className={styles.progressBarContainer}>
         <button className={styles.backButton} onClick={() => navigate(-1)}>
           <img
-            src="/src/assets/icons/back.png"
+            src={back}
             alt="Back"
             width={18}
             height={21}

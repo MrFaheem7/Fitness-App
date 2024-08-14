@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './FitnessGoalsAndServicesOfInterest.scss';
-import CustomSelect from '../../../components/UI/CustomSelect';
 import { useNavigate } from 'react-router-dom';
+import CustomSelect from '../../../components/UI/CustomSelect';
 import { fitnessGoalsQuestions } from '../../../constants';
-import { fitnessGoalsSchema } from '../../../lib/validations';
+import './FitnessGoalsAndServicesOfInterest.scss';
+import back from '../../../assets/icons/back.png';
 
 const FitnessGoalsAndServicesOfInterest = () => {
   const [answers, setAnswers] = useState({});
@@ -59,7 +59,7 @@ const FitnessGoalsAndServicesOfInterest = () => {
       <div className='progress-back-button-wrapper '> 
         <div className="back-button">
           <button onClick={handleBack}>
-            <img src="/src/assets/icons/back.png" alt="Back" width={18} height={31}/>
+            <img src={back} alt="Back" width={18} height={31}/>
           </button>
         </div>
         <div className="progress-bar">

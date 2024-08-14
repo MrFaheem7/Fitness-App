@@ -4,6 +4,7 @@ import CustomSelect from "../../../components/UI/CustomSelect";
 import { useNavigate } from "react-router-dom";
 import { trainerCoachPreferenceFormFields } from "../../../constants";
 import { trainerPreferencesSchema } from "../../../lib/validations";
+import back from "../../../assets/icons/back.png";
 
 const TrainerCoachPreferences = () => {
   const [formData, setFormData] = useState({
@@ -43,7 +44,7 @@ const TrainerCoachPreferences = () => {
       <div className={styles.progressBarContainer}>
         <button className={styles.backButton} onClick={() => navigate(-1)}>
           <img
-            src="/src/assets/icons/back.png"
+            src={back}
             alt="Back"
             width={18}
             height={21}

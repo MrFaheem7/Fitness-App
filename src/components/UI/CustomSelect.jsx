@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import styles from "./CustomSelect.module.scss";
 import PropTypes from "prop-types";
+import arrowUp from "../../assets/icons/arrowUp.png";
+import arrowDown from "../../assets/icons/arrowDown.png";
 
 const CustomSelect = ({ placeholder, options, value, onChange }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,13 +39,13 @@ const CustomSelect = ({ placeholder, options, value, onChange }) => {
         </div>
         {isOpen ? (
           <img
-            src="/src/assets/icons/arrowUp.png"
+            src={arrowUp}
             alt="arrow-up"
             className={styles.arrowIcon}
           />
         ) : (
           <img
-            src="/src/assets/icons/arrowDown.png"
+            src={arrowDown}
             alt="arrow-down"
             className={styles.arrowIcon}
           />

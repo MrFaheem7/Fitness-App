@@ -14,6 +14,7 @@ import ClientSignup from "./auth-pages/client-onboarding/ClientSignup";
 import ClientPreSignUp from "./auth-pages/client-onboarding/ClientPreSignUp";
 import ClientOtp from "./auth-pages/client-onboarding/ClienrOtp";
 import CoachPreLogin from "./auth-pages/caoch-onboarding/CoachPreLogin";
+import PricingPage from "./auth-pages/pricing/PricingPage";
 
 const ForgotPassword = lazy(() => import("./auth-pages/ForgotPassword"));
 const Login = lazy(() => import("./auth-pages/Login"));
@@ -114,7 +115,10 @@ const Main = ({ navigation }) => {
             <Route path="*" element={<Page404 />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/reset-password" element={<ResetPassword />} />
-           
+            <Route
+              path="/pricing"
+              element={<PricingPage />}
+            />
             <Route path="*" element={<Navigate to={"/login"} />} />
           </Routes>
         </Suspense>

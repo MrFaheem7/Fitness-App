@@ -1,6 +1,6 @@
 import React from 'react';
 import './FindTrainer.scss';
-import location from '../../assets/loc.png';
+import person from "../../assets/revenue.png";
 function FindTrainer() {
   return (
     <section className="find-trainer">
@@ -11,7 +11,7 @@ function FindTrainer() {
       </div>
       <div className="map-section">
         <div className="map">
-          <img src={location} alt="Map" />
+          <img src={person} alt="Map" />
         </div>
       </div>
     </section>

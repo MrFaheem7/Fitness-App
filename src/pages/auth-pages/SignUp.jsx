@@ -3,6 +3,7 @@ import styles from './SignUp.module.scss';
 import { useNavigate } from 'react-router-dom';
 import { signupSchema } from '../../lib/validations';
 import { signUpFormFields } from '../../constants';
+import trainer from '../../assets/images/trainer-1.jpeg';
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -50,7 +51,7 @@ const Signup = () => {
       <form onSubmit={handleSubmit}>
         <div className={styles.profileImage}>
           <img
-            src={formData.profileImage ? URL.createObjectURL(formData.profileImage) : '/src/assets/images/trainer-1.jpeg'}
+            src={formData.profileImage ? URL.createObjectURL(formData.profileImage) : trainer}
             alt="Profile"
           />
           <input
